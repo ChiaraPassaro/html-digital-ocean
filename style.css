@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.tester strong{
+  color: red;
+}
+
+/* Typography */
+body{
+  font-family: 'Roboto','Helvetica',Arial,sans-serif;
+  font-size: 16px; /*grandezza di partenza*/
+}
+
+h1{
+  font-size: 3.9em; /* Circa 62px su base 16px */
+}
+
+h2{
+  font-size: 2.2em; /* Circa 36px su base 16px*/
+}
+
+h3{
+  font-size: 1.2em;  /* Circa 18px su base 16px*/
+}
+
+.medium_text{
+  font-size: 1.4em;
+}
+
+/* Colors */
+body{
+  color: #031B4E;
+}
+
+.blue_color{
+  color: #0069FF;
+}
+
+.blue_dark_color{
+  color: #031B4E;
+}
+
+.white_color{
+  color: #FFF;
+}
+
+.bg_dark_blue{
+  background: #031B4E;
+}
