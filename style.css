@@ -103,7 +103,68 @@ a.grey_white_link:hover{
   opacity: 1;
 }
 
-/* Margin */
+/* Buttons*/
+.btn_white_blue{
+  color: #0069FF;
+  border:1px solid #0069FF;
+  background: #FFF;
+  transition: background 0.5s, color 0.5s;
+}
+.btn_white_blue:hover,
+.btn_white_blue:active,
+.btn_white_blue:focus{
+  color: #FFF;
+  border:1px solid #0069FF;
+  background: #0069FF;
+}
+
+.btn_white_opacity{
+  color: #0069FF;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.btn_white_opacity:hover,
+.btn_white_opacity:active,
+.btn_white_opacity:focus{
+  color: #0069FF;
+  opacity: 0.8;
+
+}
+
+.btn_blue_opacity{
+  color: #FFF;
+  background: #0069FF;
+  border: 0;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.btn_blue_opacity:hover,
+.btn_blue_opacity:active,
+.btn_blue_opacity:focus{
+  color: #FFF;
+  background: #0069FF;
+  border: 0;
+  opacity: 1;
+}
+
+.btn_white_shadow{
+  border:0;
+  box-shadow: 1px 1px 2px #CCC;
+  opacity:0.8;
+  font-weight: bold;
+  transition: background 0.5s;
+}
+.btn_white_shadow:hover,
+.btn_white_shadow:active,
+.btn_white_shadow:focus{
+  border:0;
+  box-shadow: 1px 1px 2px #CCC;
+  opacity:0.8;
+  font-weight: bold;
+  background: #CCC;
+}
+
+/* Margin - Padding */
 margin_lt_10{
   margin-left: 10px;
 }
@@ -115,4 +176,69 @@ margin_top_10{
 }
 margin_bottom_10{
   margin-right: 10px;
+}
+
+margin_lt_30{
+  margin-left: 30px;
+}
+margin_rt_30{
+  margin-right: 30px;
+}
+margin_top_30{
+  margin-left: 30px;
+}
+margin_bottom_30{
+  margin-right: 30px;
+}
+
+margin_lt_60{
+  margin-left: 60px;
+}
+margin_rt_60{
+  margin-right: 60px;
+}
+margin_top_60{
+  margin-left: 60px;
+}
+margin_bottom_60{
+  margin-right: 60px;
+}
+
+padding_lt_10{
+  padding-left: 10px;
+}
+padding_rt_10{
+  padding-right: 10px;
+}
+padding_top_10{
+  padding-left: 10px;
+}
+padding_bottom_10{
+  padding-right: 10px;
+}
+
+padding_lt_30{
+  padding-left: 30px;
+}
+padding_rt_30{
+  padding-right: 30px;
+}
+padding_top_30{
+  padding-left: 30px;
+}
+padding_bottom_30{
+  padding-right: 30px;
+}
+
+padding_lt_60{
+  padding-left: 60px;
+}
+padding_rt_60{
+  padding-right: 60px;
+}
+padding_top_60{
+  padding-left: 60px;
+}
+padding_bottom_60{
+  padding-right: 60px;
 }
