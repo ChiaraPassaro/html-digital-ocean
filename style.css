@@ -18,8 +18,8 @@ body{
 
 .wrapper{
   height: 1500px;
-  background: red;
   position: relative;
+  min-width: 230px;
 }
 
 /* Mix */
@@ -81,7 +81,10 @@ body{
 }
 
 /* Links */
-a:link{
+a,
+a:hover,
+a:active,
+a:focus{
   text-decoration: none;
   color: #031B4E;
 }
@@ -288,6 +291,10 @@ header .header_navbar{
 
 .header_hamburger_menu i{
   line-height: 70px;
+  cursor: pointer;
+  opacity: 0.8;
+  color: #0069FF;
+  font-size: 120%;
 }
 
 .header_navbar_ul > li{
