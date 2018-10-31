@@ -17,7 +17,6 @@ body{
 }
 
 .wrapper{
-  height: 1500px;
   position: relative;
   min-width: 230px;
 }
@@ -46,7 +45,7 @@ body{
 }
 
 .display_block{
-  display: block; 
+  display: block;
 }
 
 /* Typography */
@@ -108,6 +107,10 @@ body{
 
 .bg_white{
   background: #FFF;
+}
+
+.bg_light_blue{
+  background: #f3f5f9;
 }
 
 /* Links */
@@ -315,6 +318,7 @@ header .header_navbar{
     position: fixed;
     top:0;
     left:0;
+    z-index: 1;
   }
 }
 
@@ -335,7 +339,6 @@ header .header_navbar{
   line-height: 70px;
   margin-right: 5px;
 }
-
 ul.header_navbar_ul > li a:not(:only-child)::after {
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
@@ -377,7 +380,6 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
   padding: 5px;
   border: 1px solid #EEE;
 }
-
 .jumbotron_login input:not([type="submit"]):hover,
 .jumbotron_login input:not([type="submit"]):active,
 .jumbotron_login input:not([type="submit"]):focus{
@@ -401,5 +403,44 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
 @media screen and (min-width: 1200px) {
   .jumbotron_do{
     margin-top: 65px; /*Altezza navbar-fixed*/
+  }
+}
+
+/* Customer*/
+.customer h2{
+  font-size: 1em;
+  opacity: 0.6;
+}
+
+.customer_logos{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.customer_logos li{
+  display: inline-block;
+  width: calc(100%/2 - 20px);
+  padding: 10px;
+}
+.customer_logos li:nth-last-child(even){ /*Per distanziare le colonne*/
+  padding-left:0;
+  padding-right: 20px;
+}
+.customer_logos li:nth-last-child(odd){
+  padding-right:0;
+  padding-left: 20px;
+}
+
+.customer_logos li img{
+  max-width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .customer_logos li,
+  .customer_logos li:nth-last-child(odd),
+  .customer_logos li:nth-last-child(even){
+    width: calc(100%/6 - 10px);
+    padding: 5px;
   }
 }
