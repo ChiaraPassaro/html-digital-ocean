@@ -37,6 +37,18 @@ body{
   display: none;
 }
 
+.border_radius_5{
+  border-radius: 5px;
+}
+
+.inline_block{
+  display: inline-block;
+}
+
+.display_block{
+  display: block; 
+}
+
 /* Typography */
 body{
   font-family: 'Roboto','Helvetica',Arial,sans-serif;
@@ -44,7 +56,7 @@ body{
 }
 
 h1{
-  font-size: 3.9em; /* Circa 62px su base 16px */
+  font-size: 2.4em; /* Circa 40px su base 16px */
 }
 
 h2{
@@ -55,8 +67,22 @@ h3{
   font-size: 1.2em;  /* Circa 18px su base 16px*/
 }
 
+.small_text{
+  font-size: 0.8em;
+}
+
 .medium_text{
   font-size: 1.4em;
+}
+
+.text_underline{
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  h1{
+    font-size: 3.9em; /* Circa 62px su base 16px */
+  }
 }
 
 /* Colors */
@@ -78,6 +104,10 @@ body{
 
 .bg_dark_blue{
   background: #031B4E;
+}
+
+.bg_white{
+  background: #FFF;
 }
 
 /* Links */
@@ -124,6 +154,10 @@ a.grey_white_link{
 }
 a.grey_white_link:hover{
   opacity: 1;
+}
+
+a.text_underline:link{
+  text-decoration: underline;
 }
 
 /* Buttons*/
@@ -315,4 +349,57 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
     line-height: 50px;
     content: "\f078";
     margin-left: 2px;
+}
+
+/* Jumbotron */
+.jumbotron_do{
+  background-image: url(https://www.digitalocean.com/assets/media/homepage/hero-background-c9490927.svg),-webkit-linear-gradient(#303fd9 0%, #031b4e);
+  background-image: url(https://www.digitalocean.com/assets/media/homepage/hero-background-c9490927.svg),-o-linear-gradient(#303fd9 0%, #031b4e);
+  background-image: url(https://www.digitalocean.com/assets/media/homepage/hero-background-c9490927.svg),linear-gradient(#303fd9 0%, #031b4e);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.jumbotron_do h2{
+  font-size: 1.8em; /*circa 30px su base 16px*/
+}
+
+.jumbotron_login_wrapper{
+  padding: 20px;
+}
+
+.jumbotron_login input:not([type="submit"]){
+  width: 100%;
+  border-radius: 5px;
+  line-height: 2em;
+  padding: 5px;
+  border: 1px solid #EEE;
+}
+
+.jumbotron_login input:not([type="submit"]):hover,
+.jumbotron_login input:not([type="submit"]):active,
+.jumbotron_login input:not([type="submit"]):focus{
+  border: 1px solid #005FE6;
+}
+
+.jumbotron_login .btn{
+  width: 100%;
+}
+
+.jumbotron_login .google_signup::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url('../img/google-icon.png');
+  background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .jumbotron_do{
+    margin-top: 65px; /*Altezza navbar-fixed*/
+  }
 }
