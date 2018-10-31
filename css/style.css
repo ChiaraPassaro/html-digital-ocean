@@ -105,6 +105,11 @@ body{
   color: #FFF;
 }
 
+.white_opacity_color{
+  color: #FFF;
+  opacity: 0.7;
+}
+
 .bg_dark_blue{
   background: #031B4E;
 }
@@ -162,6 +167,17 @@ a.grey_white_link{
 a.grey_white_link:hover{
   opacity: 1;
 }
+
+a.light_blue_link{
+  color: #00d7d2;
+  opacity: 1;
+  transition: opacity 1s;
+}
+a.light_blue_link:hover{
+  opacity: 0.6;
+}
+
+
 
 a.text_underline:link{
   text-decoration: underline;
@@ -591,5 +607,26 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
   }
   .deploy_items{
     margin-top: 0;
+  }
+}
+
+/* Service */
+.service{
+  background-image: url(https://www.digitalocean.com/assets/media/homepage/data-center-map-8227272d.svg),linear-gradient(180deg,#0047c6 0,#001d99);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service_row {
+  border-bottom: 1px solid #FFF;
+  padding-top:10px;
+  padding-bottom: 10px;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width:1200px) {
+  .service_column{
+    margin-bottom: 20px;
   }
 }
