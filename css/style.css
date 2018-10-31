@@ -51,7 +51,7 @@ body{
 /* Typography */
 body{
   font-family: 'Roboto','Helvetica',Arial,sans-serif;
-  font-size: 16px; grandezza di partenza
+  font-size: 16px; /*grandezza di partenza*/
 }
 
 h1{
@@ -171,6 +171,7 @@ ul.vertical_link_list{
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 1.3em;
 }
 ul.vertical_link_list li{
   display: block;
@@ -253,8 +254,10 @@ ul.vertical_link_list li:target{
 .slider_box{
   height: 100%;
   position: relative;
+  display: table;
 }
 
+/*Display table-cell per non dover impostare altezza fissa di .slider_box*/
 .slider_img{
   width: 80%;
   height: 100%;
@@ -268,6 +271,7 @@ ul.vertical_link_list li:target{
   padding-top: 20px;
 }
 
+/*Display table-cell per non dover impostare altezza fissa di .slider_box*/
 .slider_arrow_right,
 .slider_arrow_left{
   width: 9%;
@@ -307,6 +311,52 @@ ul.vertical_link_list li:target{
     display: none;
   }
 }
+
+.slider_control{
+  display: table-row;
+  text-align: center;
+  width: 100%;
+}
+
+.slider_control > ul{
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.slider_control > ul > li{
+    margin-left: 5px;
+    float: left;
+    width: calc(100%/4 - 5px);
+    color: #0069FF;
+    cursor: pointer;
+}
+.slider_control > ul > li::before{
+  font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1em;
+  content: "\f111";
+  transition: font-weight 0.6s, opcaity 0.6s;
+}
+.slider_control > ul > li.active::before{
+  font-weight: 900;
+}
+.slider_control > ul > li:hover::before,
+.slider_control > ul > li:active::before,
+.slider_control > ul > li:focus::before{
+  font-weight: 900;
+  opacity:0.7;
+}
+
+
 
 /* Margin - Padding */
 .margin_lt_10{
