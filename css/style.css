@@ -624,3 +624,8 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
     margin-bottom: 20px;
   }
 }
+
+/* Get Started */
+.get_started{
+  background: linear-gradient(180deg,#0242bc 0,#001e9a);
+}
