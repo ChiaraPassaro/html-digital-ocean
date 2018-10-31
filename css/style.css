@@ -281,10 +281,7 @@ ul.vertical_link_list li:target{
 }
 .slider_img img{
   max-width: 100%;
-}
-.slider_img span{
-  display: inline-block;
-  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*Display table-cell per non dover impostare altezza fissa di .slider_box*/
@@ -329,29 +326,26 @@ ul.vertical_link_list li:target{
 }
 
 .slider_control{
-  display: table-row;
   text-align: center;
   width: 100%;
+  margin-top: 30px;
 }
 
 .slider_control > ul{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 20%;
-  margin: 0 auto;
   list-style-type: none;
 }
 .slider_control > ul > li{
-    margin-left: 5px;
-    float: left;
-    width: calc(100%/4 - 5px);
+    display:inline-block;
     color: #0069FF;
     cursor: pointer;
 }
 .slider_control > ul > li::before{
   font-weight: 400;
   font-family: "Font Awesome 5 Free";
-  font-size: 14px;
+  font-size: 12px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
