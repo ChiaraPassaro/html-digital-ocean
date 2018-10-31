@@ -249,6 +249,65 @@ ul.vertical_link_list li:target{
   background: #CCC;
 }
 
+/* Slider */
+.slider_box{
+  height: 100%;
+  position: relative;
+}
+
+.slider_img{
+  width: 80%;
+  height: 100%;
+  display:table-cell;
+}
+.slider_img img{
+  max-width: 100%;
+}
+.slider_img span{
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.slider_arrow_right,
+.slider_arrow_left{
+  width: 9%;
+  height: 100%;
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.slider_arrow_left i,
+.slider_arrow_right i{
+  font-size: 3em;
+}
+.slider_arrow_left a,
+.slider_arrow_right a{
+  color: #031B4E;
+  transition: color 0.5s;
+}
+.slider_arrow_left a:hover,
+.slider_arrow_left a:active,
+.slider_arrow_left a:focus,
+.slider_arrow_right a:hover,
+.slider_arrow_right a:active,
+.slider_arrow_right a:focus{
+  color: #0069FF;
+}
+.slider_arrow_left i.disabled{
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .slider_img{
+    width: 100%;
+  }
+
+  .slider_arrow_right,
+  .slider_arrow_left{
+    display: none;
+  }
+}
+
 /* Margin - Padding */
 .margin_lt_10{
   margin-left: 10px;
@@ -435,6 +494,7 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
 .customer h2{
   font-size: 1em;
   opacity: 0.6;
+  text-transform: uppercase;
 }
 
 .customer_logos{
@@ -471,7 +531,6 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
 }
 
 /* Deploy */
-
 .deploy_items{
   margin-top: 30px;
 }
