@@ -629,3 +629,26 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
 .get_started{
   background: linear-gradient(180deg,#0242bc 0,#001e9a);
 }
+
+/*Footer*/
+ul.vertical_menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.vertical_menu li{
+  margin-bottom: 10px;
+}
+
+ul.social-icon{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social-icon li{
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.5em;
+}
