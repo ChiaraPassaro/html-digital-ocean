@@ -612,11 +612,20 @@ ul.header_navbar_ul > li a:not(:only-child)::after {
   background-size: cover;
 }
 
+.service_column{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 .service_row {
   border-bottom: 1px solid #FFF;
   padding-top:10px;
   padding-bottom: 10px;
   font-size: 0.8em;
+}
+
+.service_row:last-child {
+  border: 0;
 }
 
 @media screen and (max-width:1200px) {
